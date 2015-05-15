@@ -1,0 +1,47 @@
+{
+  "name": "catbox-memcached2",
+  "version": "1.0.0",
+  "description": "Yet another memcached adapter for catbox",
+  "keywords": [
+    "memcached",
+    "adapter",
+    "catbox",
+    "cache",
+    "hapi",
+    "hapijs"
+  ],
+  "homepage": "http://github.com/cmfatih/catbox-memcached2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmfatih/catbox-memcached2.git"
+  },
+  "bugs": {
+    "url": "http://github.com/cmfatih/catbox-memcached2/issues"
+  },
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "cmfatih",
+    "url": "http://github.com/cmfatih"
+  },
+  "contributors": [],
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000 --reporter spec test/test-*.js",
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js `find . \\( -path \\*node_modules\\* -prune -o -path \\*sources\\* -prune -o -name \\*.js \\) -type f | awk 'NR>1{printf \" \"}{printf $0}'`",
+    "check": "npm run test && npm run lint"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "memcached": "2.1.x"
+  },
+  "devDependencies": {
+    "mocha": "2.2.x",
+    "chai": "2.2.x",
+    "jshint": "^2.7.0",
+    "jshint-stylish": "^1.0.1",
+    "catbox": "4.x.x"
+  }
+}
