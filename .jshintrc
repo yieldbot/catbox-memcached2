@@ -12,7 +12,6 @@
   "latedef": true,
   "newcap": true,
   "noarg": true,
-  "sub": true,
   "forin": true,
 
   "globals": {
