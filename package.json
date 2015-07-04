@@ -27,9 +27,9 @@
   "contributors": [],
   "main": "./index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 --reporter spec test/test-*.js",
-    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js `find . \\( -path \\*node_modules\\* -prune -o -path \\*sources\\* -prune -o -name \\*.js \\) -type f | awk 'NR>1{printf \" \"}{printf $0}'`",
-    "check": "npm run test && npm run lint"
+    "test-unit": "node_modules/mocha/bin/mocha --timeout 10000 --reporter spec test/test-*.js",
+    "lint": "node_modules/jshint/bin/jshint --reporter node_modules/jshint-stylish `find . \\( -path \\*node_modules\\* -prune -o -path \\*sources\\* -prune -o -name \\*.js \\) -type f | awk 'NR>1{printf \" \"}{printf $0}'`",
+    "test": "npm run test-unit && npm run lint"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -39,9 +39,9 @@
   },
   "devDependencies": {
     "mocha": "2.2.x",
-    "chai": "2.2.x",
-    "jshint": "^2.7.0",
-    "jshint-stylish": "^1.0.1",
+    "chai": "3.0.x",
+    "jshint": "2.8.x",
+    "jshint-stylish": "2.0.x",
     "catbox": "4.x.x"
   }
 }
