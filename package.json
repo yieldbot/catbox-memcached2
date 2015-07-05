@@ -1,6 +1,6 @@
 {
   "name": "catbox-memcached2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yet another memcached adapter for catbox",
   "keywords": [
     "memcached",

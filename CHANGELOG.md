@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.0.2 (2015-07-05)
+
+* Update tests
+
 ### 1.0.1 (2015-07-03)
 
 * Upgrade dev dependencies
