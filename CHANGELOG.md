@@ -1,5 +1,10 @@
 ## Changelog
 
+### 2.0.0 (2015-07-09)
+
+* Refactor events
+* Update readme
+
 ### 1.0.2 (2015-07-05)
 
 * Update tests
