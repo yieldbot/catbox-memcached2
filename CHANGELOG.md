@@ -1,5 +1,13 @@
 ## Changelog
 
+### 3.0.0 (2015-07-18)
+
+* Change behavior for partition option
+* Change cache key structure
+* Change events
+* Add support for more than 30 days
+* Add more tests
+
 ### 2.0.0 (2015-07-09)
 
 * Refactor events

@@ -1,7 +1,7 @@
 {
   "name": "catbox-memcached2",
-  "version": "2.0.0",
-  "description": "Yet another memcached adapter for catbox",
+  "version": "3.0.0",
+  "description": "Memcached adapter for catbox. Supports events, more than 30 days ttl and ready to use for production",
   "keywords": [
     "memcached",
     "adapter",
@@ -27,9 +27,9 @@
   "contributors": [],
   "main": "./index.js",
   "scripts": {
-    "test-unit": "node_modules/mocha/bin/mocha --timeout 10000 --reporter spec test/test-*.js",
     "lint": "node_modules/jshint/bin/jshint --reporter node_modules/jshint-stylish `find . \\( -path \\*node_modules\\* -prune -o -path \\*sources\\* -prune -o -name \\*.js \\) -type f | awk 'NR>1{printf \" \"}{printf $0}'`",
-    "test": "npm run test-unit && npm run lint"
+    "test:unit": "node_modules/mocha/bin/mocha --timeout 10000 --reporter spec test/test-*.js",
+    "test": "npm run test:unit && npm run lint"
   },
   "engines": {
     "node": ">=0.10.0"
