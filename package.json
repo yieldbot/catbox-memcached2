@@ -1,6 +1,6 @@
 {
   "name": "catbox-memcached2",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Memcached adapter for catbox. Supports events, more than 30 days ttl and ready to use for production",
   "keywords": [
     "memcached",

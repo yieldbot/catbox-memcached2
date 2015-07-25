@@ -1,5 +1,9 @@
 ## Changelog
 
+### 3.0.1 (2015-07-24)
+
+* Misc.updates
+
 ### 3.0.0 (2015-07-18)
 
 * Change behavior for partition option
