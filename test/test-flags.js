@@ -10,7 +10,7 @@ var Client = require('../'),
 describe('flags', function() {
 
   var getClient = function getClient() {
-    return new Client({location: '127.0.0.1:11212', 'flags': {'bypassOnConnError': true}});
+    return new Client({location: '127.0.0.1:11212', 'flags': {'bypassCacheOnConnError': true}});
   };
 
   it('should not fail', function(done) {
