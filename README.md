@@ -25,6 +25,9 @@ npm install catbox-memcached2
 * `failures` - Number of failure before marked server as dead. Default `1`
 * `retry` - Retry delay when server has an error. Default `1000` ms
 * `idle` - Idle time before removing connection from pool. Default `60000` ms
+* `flags` - Flags
+  * `bypassCacheOnConnError` - Bypass cache if there is a connection error. Default `false`
+  * `debug` - List of flags (`['events']`) for debugging. Default `[]`
 
 *See [catbox client](https://github.com/hapijs/catbox#client) and 
 [memcached](https://github.com/3rd-Eden/memcached#options) for more details and options.*
