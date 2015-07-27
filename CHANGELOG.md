@@ -1,5 +1,9 @@
 ## Changelog
 
+### 3.1.0 (2015-07-27)
+
+* Add bypass cache flag
+
 ### 3.0.1 (2015-07-24)
 
 * Misc.updates
