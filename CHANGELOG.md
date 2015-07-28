@@ -1,5 +1,12 @@
 ## Changelog
 
+### 3.2.0 (2015-07-28)
+
+* Remove duplicate event emitter for get
+* Move events upper level
+* Update tests
+* Add isConnError
+
 ### 3.1.0 (2015-07-27)
 
 * Add bypass cache flag
