@@ -9,13 +9,15 @@ var Client = require('../'),
 
 describe('lib', function() {
 
-  var getClient = function getClient() {
-    return new Client();
-  };
+  var client;
+  beforeEach(function() {
+    client = new Client();
+  });
+  afterEach(function() {
+    client.stop();
+  });
 
   it('should create a connection', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -24,8 +26,6 @@ describe('lib', function() {
   });
 
   it('should end the connection', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -36,8 +36,6 @@ describe('lib', function() {
   });
 
   it('should set and get an item', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -57,8 +55,6 @@ describe('lib', function() {
   });
 
   it('should set and get an item (30 days)', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -82,8 +78,6 @@ describe('lib', function() {
   });
 
   it('should set and get an item (>30 days)', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -107,8 +101,6 @@ describe('lib', function() {
   });
 
   it('should fail to set an item due to value', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -124,8 +116,6 @@ describe('lib', function() {
   });
 
   it('should fail to set an item due to key', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -142,8 +132,6 @@ describe('lib', function() {
   });
 
   it('should fail to set an item due to ttl', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -156,8 +144,6 @@ describe('lib', function() {
   });
 
   it('should return null - key', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -171,8 +157,6 @@ describe('lib', function() {
   });
 
   it('should fail to return - key', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -186,8 +170,6 @@ describe('lib', function() {
   });
 
   it('should drop an item', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -208,8 +190,6 @@ describe('lib', function() {
   });
 
   it('should fail to drop an item due to key', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
@@ -228,8 +208,6 @@ describe('lib', function() {
   });
 
   it('should validate segment', function(done) {
-    var client = getClient();
-
     expect(client.validateSegmentName().message).to.equal('invalid segment name');
     expect(client.validateSegmentName('\n').message).to.equal('invalid segment name');
     expect(client.validateSegmentName('\0').message).to.equal('invalid segment name');
@@ -239,8 +217,6 @@ describe('lib', function() {
   });
 
   it('should return null - ttl', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);

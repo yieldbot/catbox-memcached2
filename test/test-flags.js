@@ -9,13 +9,15 @@ var Client = require('../'),
 
 describe('flags', function() {
 
-  var getClient = function getClient() {
-    return new Client({location: '127.0.0.1:11212', 'flags': {'bypassCacheOnConnError': true}});
-  };
+  var client;
+  beforeEach(function() {
+    client = new Client({location: '127.0.0.1:11212', 'flags': {'bypassCacheOnConnError': true}});
+  });
+  afterEach(function() {
+    client.stop();
+  });
 
   it('should not fail', function(done) {
-    var client = getClient();
-
     client.start(function(err) {
       expect(err).to.equal(undefined);
       expect(client.isReady()).to.equal(true);
