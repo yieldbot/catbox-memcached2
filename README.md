@@ -38,7 +38,7 @@ Licensed under The MIT License (MIT)
 For the full copyright and license information, please view the LICENSE.txt file.
 
 [npm-url]: http://npmjs.org/package/catbox-memcached2
-[npm-image]: https://badge.fury.io/js/catbox-memcached2.png
+[npm-image]: https://badge.fury.io/js/catbox-memcached2.svg
 
-[travis-url]: https://travis-ci.org/cmfatih/catbox-memcached2
-[travis-image]: https://travis-ci.org/cmfatih/catbox-memcached2.svg?branch=master
+[travis-url]: https://travis-ci.org/yieldbot/catbox-memcached2
+[travis-image]: https://travis-ci.org/yieldbot/catbox-memcached2.svg?branch=master
