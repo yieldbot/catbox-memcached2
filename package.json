@@ -10,19 +10,19 @@
     "hapi",
     "hapijs"
   ],
-  "homepage": "http://github.com/cmfatih/catbox-memcached2",
+  "homepage": "http://github.com/yieldbot/catbox-memcached2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cmfatih/catbox-memcached2.git"
+    "url": "https://github.com/yieldbot/catbox-memcached2.git"
   },
   "bugs": {
-    "url": "http://github.com/cmfatih/catbox-memcached2/issues"
+    "url": "http://github.com/yieldbot/catbox-memcached2/issues"
   },
   "license": "MIT",
   "private": false,
   "author": {
-    "name": "cmfatih",
-    "url": "http://github.com/cmfatih"
+    "name": "Yieldbot, Inc.",
+    "url": "http://github.com/yieldbot"
   },
   "contributors": [],
   "main": "./index.js",
